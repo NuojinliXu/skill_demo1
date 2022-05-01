@@ -156,6 +156,7 @@ public class MyArrayList<E> implements MyList<E> {
         for(int i = index; i < this.size-1;i++){
             this.data[i] = this.data[i+1];
         }
+        this.size--;
         return (E)temp;
     }
     //this method returns the size of data
